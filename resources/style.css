@@ -40,4 +40,16 @@
 
 .contentIsActive {
     display: block;
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
